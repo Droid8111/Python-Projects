@@ -1,0 +1,17 @@
+This Python project tracks the International Space Station (ISS) and sends an email notification to the user when the ISS is directly overhead. The app uses APIs to determine the ISS's location and the current time of day to check if it's night. If both conditions are met, an email notification is sent.
+
+Features:
+ISS Location Tracking: The app uses the Open Notify API to get real-time data about the ISS’s location.
+Night-Time Detection: The app checks if it’s currently night-time in your location using the Sunrise-Sunset API, which provides sunrise and sunset times based on your latitude and longitude.
+Email Notification: When the ISS is directly overhead and it's night-time, the app sends an email notification to the user.
+Continuous Monitoring: The app runs in an infinite loop, checking every minute to see if the ISS is overhead and whether it’s nighttime.
+Workflow:
+Track ISS: The app fetches the current ISS position and compares it to the user's location.
+Check for Night: It checks whether the time is currently after sunset or before sunrise in the user’s location.
+Send Notification: If both conditions (ISS overhead and night-time) are met, an email notification is sent to the user, telling them to look up and see the ISS.
+Repeat: The app continues to check every minute to see if these conditions are met again.
+Prerequisites:
+Email Setup: The script uses SMTP to send emails, so you'll need to configure the my_email and password variables with your email and password. You’ll also need to fill in the correct SMTP server address in connection = smtplib.SMTP("__YOUR_SMTP_ADDRESS_HERE___").
+Location Coordinates: The script uses latitude and longitude for the user's location (currently set for London, UK). You can change MY_LAT and MY_LONG to reflect your own location.
+File Structure:
+Main Script: Contains the logic to check for the ISS's position and the time of day, and sends an email notification if needed.

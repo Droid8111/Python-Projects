@@ -1,0 +1,2 @@
+This python code includes the selenium library.
+In this code I automated the online game 'Cookie Clicker' where my code automatically plays the game with some logic/algorithm which helps it decide the best way to progress the game. Tested the code for continious 50+ hours and didn't have any errors. 

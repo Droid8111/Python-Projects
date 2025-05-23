@@ -1,0 +1,3 @@
+This Python script uses Selenium and OCR (Optical Character Recognition) to scrape the price of a product from Amazon. It interacts with Amazon's product page, attempts to extract the price, and handles cases where CAPTCHA is displayed by using OCR to read CAPTCHA text 
+
+The goal of this project is to demonstrate web scraping, price extraction, and OCR usage, while also handling CAPTCHA verification when it's triggered.

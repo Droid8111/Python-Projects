@@ -1,0 +1,2 @@
+i try to learn the basics of if else statements and loops.
+In this code I can order different drinks and insert the amount of coins and type of coins i have, if i have enough coins, i get my drink or else i get my coins back.
